@@ -79,15 +79,26 @@
             margin-top: 28px;
         }
 
-        a:hover {
+        a.line2:hover {
             text-decoration: underline;
             text-underline-offset: 8px;
 
         }
 
-        a {
+        a.line2 {
             text-decoration: none;
             color: #c6c9d3;
+        }
+
+        a.line:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+
+        }
+
+        a.line {
+            text-decoration: none;
+            color: #e96f67;
         }
     </style>
 </head>
@@ -102,17 +113,19 @@
             </div>
         </div>
         <div class="two">
-            <a href="#">
+            <a class="line2" href="#">
                 <div class="d z zz">Services and Pricing</div>
             </a>
-            <a href="#">
+            <a class="line2" href="#">
                 <div class="d z zz">About</div>
             </a>
-            <a href="#">
+            <a class="line2" href="#">
                 <div class="d z zz">Contact</div>
             </a>
             <div class="e"><img src="image/user2.png" width="30" /></div>
-            <div class="f">Log In</div>
+            <a class="line" href="#">
+                <div class="f">Log In</div>
+            </a>
             <div class="g"><img src="image/fb.png" width="20" /></div>
             <div class="g"><img src="image/ig.png" width="20" /></div>
             <div class="g"><img src="image/in.png" width="20" /></div>
