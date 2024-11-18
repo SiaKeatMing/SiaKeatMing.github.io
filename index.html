@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Exercise4
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(week5/image/background4.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0px;
+            font-family: "Geo", sans-serif;
+        }
+
+        header {
+            background-color: #243642;
+        }
+
+        .pic {
+            margin-top: 5px;
+            padding-left: 20px;
+            margin-bottom: -15px;
+        }
+
+        #head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 20px;
+        }
+
+        .logo1 {
+            padding-right: 10px;
+        }
+
+        .self {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: -15px;
+        }
+
+        .self1 {
+            border-radius: 50%;
+        }
+
+        .text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: -10px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: -40px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .prg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 22px;
+        }
+
+        .prg1 {
+            margin-bottom: -20px;
+
+        }
+
+        .exc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px;
+            border-radius: 20px;
+            background-color: rgb(226, 241, 231, 0.8);
+            padding: 20px;
+            margin: 15px;
+        }
+
+        .exct {
+            display: flex;
+            justify-content: center;
+        }
+
+        .e1 {
+            width: 28%;
+        }
+
+        .e2 {
+            width: 92%;
+
+        }
+
+        .e3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .textp {
+            margin: 10px;
+        }
+
+        .line {
+            border-bottom: 2px solid black;
+            display: inline-block;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .task {
+            margin-right: 10px;
+        }
+
+        .downtext {
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btt {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: black;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            width: 0%;
+            height: 1.5px;
+            background: black;
+            transition: 0.3s ease;
+        }
+
+        a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <div><img class="pic" src="week5/image/logo.png" width="70" /></div>
+            <div class="logo">
+                <a target="_blank" href="https://x.com/?lang=en">
+                    <div><img class="logo1" src="week5/image/twitter.png" width="25" /></div>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/">
+                    <div><img class="logo1" src="week5/image/facebook.png" width="25" /></div>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/?hl=id--">
+                    <div><img class="logo1" src="week5/image/instagram.png" width="25" /></div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="self">
+        <img class="self1" src="week5/image/self.png" width="200" />
+    </div>
+    <div class="text">
+        <h1>Keat Ming</h1>
+        <br />
+        <h2>Web Publishing</h2>
+    </div>
+    <div class="prg">
+        <p class="prg1">Hello! I'm Keat Ming, a multimedia designer. My hobby is playing the piano, </p>
+        <p> music helps me feel relaxed. Welcome to my personol page!</p>
+    </div>
+
+    <div class="exct">
+        <div class="exc e1">
+            <h2 class="line">
+                <div><img class="task" src="week5/image/task.png" width="30"></div>Week 2
+            </h2>
+            <div class="prg">
+                <a target="_blank" href="week2/exe1.html">
+                    <p class="textp">Exercise 1</p>
+                </a>
+                <a target="_blank" href="week2/exe2.html">
+                    <p class="textp">Exercise 2</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="exc e1">
+            <h2 class="line">
+                <div><img class="task" src="week5/image/task.png" width="30"></div>Week 3
+            </h2>
+            <div class="prg">
+                <a target="_blank" href="week3/exe1.html">
+                    <p class="textp">Exercise 1</p>
+                </a>
+                <a target="_blank" href="week3/exe2.html">
+                    <p class="textp">Exercise 2</p>
+                </a>
+            </div>
+        </div>
+        <div class="exc e1">
+            <h2 class="line">
+                <div><img class="task" src="week5/image/task.png" width="30"></div>Week 4
+            </h2>
+            <div class="prg">
+                <a target="_blank" href="week4/exe1.html">
+                    <p class="textp">Exercise 1</p>
+                </a>
+                <a target="_blank" href="week4/exe2.html">
+                    <p class="textp">Exercise 2</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="e3">
+        <div class="exc e2">
+            <h2 class="line">
+                <div><img class="task" src="week5/image/task.png" width="30"></div>Week 5
+            </h2>
+            <div class="prg">
+                <a target="_blank" href="week5/exe1.html">
+                    <p class="textp">Exercise 1</p>
+                </a>
+                <a target="_blank" href="week5/exe2.html">
+                    <p class="textp">Exercise 2</p>
+                </a>
+                <a target="_blank" href="week5/exe3.html">
+                    <p class="textp">Exercise 3</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <header>
+        <div class="btt">
+            <div class="bottom">
+                <a target="_blank" href="https://x.com/?lang=en">
+                    <div><img class="logo1" src="week5/image/twitter.png" width="25" /></div>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/">
+                    <div><img class="logo1" src="week5/image/facebook.png" width="25" /></div>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/?hl=id--">
+                    <div><img class="logo1" src="week5/image/instagram.png" width="25" /></div>
+                </a>
+            </div>
+            <div class="downtext">@ 2024 Sia Keat Ming, All right reserved</div>
+        </div>
+    </header>
+</body>
+
+</html>
