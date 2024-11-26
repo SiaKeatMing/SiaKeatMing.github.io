@@ -5,6 +5,7 @@
     <title>Exercise1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /*desktop*/
         .Head {
             display: flex;
             justify-content: space-between;
@@ -78,6 +79,48 @@
         .home {
             margin-right: -35px;
         }
+
+        /*mobile*/
+        @media screen and (max-width: 600px) {
+            .Head {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 10px;
+            }
+
+            .head {
+                display: flex;
+            }
+
+            .head div {
+                font-size: 14px;
+            }
+
+            .logo {
+                padding: 0px;
+                padding-left: 0px;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+
+            .home {
+                display: none;
+            }
+
+            .next img {
+                width: 20px;
+            }
+
+            .submenu a {
+                font-size: 14px;
+            }
+
+            .submenu {
+                min-width: 150px;
+                padding-top: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -91,9 +134,7 @@
             <div class="text fonttext">Home</div>
             <div class="menu">
                 <a href="#">
-                    <div class="text fonttext next">
-                        <div></div>About<img src="image/next.png" width="25" />
-                    </div>
+                    <div class="text fonttext next">About<img src="image/next.png" width="25" /></div>
                 </a>
                 <div class="submenu">
                     <a class="text fonttext subtext">Mission</a>
