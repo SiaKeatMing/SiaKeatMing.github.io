@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Geo:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+
+    <style>
+        img {
+            overflow: hidden;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .in_img {
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+            margin-top: 18px;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            background-color: #f6f5ef;
+        }
+
+        h1,
+        h6 {
+            margin: 0;
+        }
+
+        .box1 {
+            margin-top: 140px;
+            gap: 35px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #frs_txt {
+            font-size: 1.2vw;
+            text-transform: uppercase;
+            line-height: 1em;
+            letter-spacing: 1px;
+            font-family: 'Archivo', sans-serif;
+            font-weight: bold;
+        }
+
+        #scd_txt {
+            line-height: 1em;
+            letter-spacing: 1px;
+            font-size: 1.6vw;
+            font-family: 'Archivo', sans-serif;
+            font-weight: bold;
+        }
+
+        #trd_txt {
+            font-size: 0.95vw;
+            font-family: 'Archivo', sans-serif;
+            opacity: 60%;
+        }
+
+        .trd_txt {
+            font-size: 0.95vw;
+            font-family: 'Archivo', sans-serif;
+            opacity: 60%;
+            width: 80%;
+            margin: 0 auto;
+            line-height: 1.5em;
+            margin-bottom: 40px;
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+
+        .box3 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 120px;
+        }
+
+        .in_box {
+            width: 32%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 20%;
+            border-radius: 15px;
+            gap: 20px;
+        }
+
+        .box23 {
+            margin-top: 50px;
+            width: 74%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 13%;
+            padding-right: 13%;
+            row-gap: 30px;
+        }
+
+        .bdname {
+            margin: 0 auto;
+            width: 80%;
+            line-height: 1em;
+            letter-spacing: 1px;
+            font-size: 1.5vw;
+            font-family: 'Archivo', sans-serif;
+            font-weight: bold;
+        }
+
+        .in_img img {
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .in_box:hover img {
+            transform: scale(1.1);
+        }
+
+        .in_img div {
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        @keyframes floatUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textFloatUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .in_box {
+            width: 32%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 20%;
+            border-radius: 15px;
+            gap: 20px;
+            opacity: 0;
+            animation: floatUp 0.8s ease-out forwards;
+        }
+
+        .box2 .in_box:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .box2 .in_box:nth-child(2) {
+            animation-delay: 0.25s;
+        }
+
+        .box2 .in_box:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .box3 .in_box:nth-child(1) {
+            animation-delay: 0.55s;
+        }
+
+        .box3 .in_box:nth-child(2) {
+            animation-delay: 0.7s;
+        }
+
+        .box3 .in_box:nth-child(3) {
+            animation-delay: 0.85s;
+        }
+
+        #frs_txt,
+        #scd_txt,
+        #trd_txt {
+            opacity: 0;
+            animation: textFloatUp 0.8s ease-out forwards;
+        }
+
+        #frs_txt {
+            animation-delay: 0.1s;
+        }
+
+        #scd_txt {
+            animation-delay: 0.25s;
+        }
+
+        #trd_txt {
+            animation-delay: 0.4s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box1">
+        <div id="frs_txt">
+            <h6>building a better future</h6>
+        </div>
+        <div id="scd_txt">
+            <h1>We construct & deliver quality projects</h1>
+        </div>
+        <div id="trd_txt">
+            <p>Meet our customers and explore their success stories with us</p>
+        </div>
+    </div>
+    <div class="box23">
+        <div class="box2">
+            <div class="in_box">
+                <div class="in_img">
+                    <div><img
+                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-017-copyright.jpg">
+                    </div>
+                </div>
+                <div class="bdname">Residential projects</div>
+                <div class="trd_txt">We build sustainable and modern homes for comfortable living.</div>
+            </div>
+            <div class="in_box">
+                <div class="in_img">
+                    <div><img
+                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-018-copyright.jpg">
+                    </div>
+                </div>
+                <div class="bdname">Commercial spaces</div>
+                <div class="trd_txt">We create efficient, inspiring workspaces for businesses of all sizes.</div>
+            </div>
+            <div class="in_box">
+                <div class="in_img">
+                    <div><img
+                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-019-copyright.jpg">
+                    </div>
+                </div>
+                <div class="bdname">Infrastructure works</div>
+                <div class="trd_txt">We develop strong, reliable infranstrucutre for growing communities.</div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="in_box">
+                <div class="in_img">
+                    <div><img
+                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-020-copyright.jpg">
+                    </div>
+                </div>
+                <div class="bdname">Building renovations</div>
+                <div class="trd_txt">We upgrade and transform spaces with modern design solutions.</div>
+            </div>
+            <div class="in_box">
+                <div class="in_img">
+                    <div><img
+                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-021-copyright.jpg">
+                    </div>
+                </div>
+                <div class="bdname">Project management</div>
+                <div class="trd_txt">We handle projects from planning to delivery with expert care.</div>
+            </div>
+            <div class="in_box">
+                <div class="in_img">
+                    <div><img
+                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-022-copyright.jpg">
+                    </div>
+                </div>
+                <div class="bdname">Sustainable solutions</div>
+                <div class="trd_txt">We focus on green building practices to protect the environment.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
