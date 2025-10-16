@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Geo:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox2</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f6f5ef;
+        }
+
+        .bar {
+            background-color: white;
+            box-shadow: -0.5px 0.5px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .bar_content {
+            padding: 10px 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .content div:hover {
+            color: #f9612b;
+            transition: all 0.3s ease;
+        }
+
+        #services {
+            color: #f9612b;
+        }
+
+        #services2 {
+            color: #f9612b;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact img {
+            padding-top: 4px;
+            width: 20px;
+        }
+
+        .logo img {
+            width: 190px;
+            padding-top: 5px;
+        }
+
+        .content div {
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .phone_content {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            transition: all 0.3s ease;
+        }
+
+        .phone_content div {
+            font-family: 'Archivo', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .phone_content:hover {
+            opacity: 70%;
+            transition: all 0.3s ease;
+        }
+
+        .bar_button {
+            background-color: #f9612b;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            padding: 15px 18px;
+            font-family: 'Archivo', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bar_button:hover {
+            background-color: #e85b28;
+            transition: all 0.3s ease;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .burger {
+            display: none;
+            border: none;
+            background: transparent;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            align-items: start;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .burger span {
+            width: 26px;
+            height: 1.8px;
+            background: #222;
+            border-radius: 3px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        #span3 {
+            width: 20px;
+            height: 1.8px;
+        }
+
+        .burger:hover {
+            opacity: 70%;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 1280px) {
+
+            .content {
+                display: none;
+            }
+
+            .bar_button {
+                display: none;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .bar_content {
+                padding: 12px 18px;
+            }
+        }
+
+        .mobile_menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background: black;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 32px;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(.2, .9, .3, 1), opacity 0.8s ease;
+            z-index: 9;
+            opacity: 0;
+        }
+
+        .mobile_menu.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .mobile_menu a {
+            font-family: 'Archivo', sans-serif;
+            color: white;
+            font-size: 23px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .mobile_menu a:hover {
+            color: #f9612b;
+        }
+
+        #cross {
+            display: flex;
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #cross:hover {
+            opacity: 70%;
+            transition: all 0.3s ease;
+        }
+
+        #cross img {
+            width: 30px;
+        }
+
+        @media (max-width: 720px) {
+
+            .mobile_menu {
+                width: calc(100% - 100px);
+            }
+
+            .phone_content {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="bar_content">
+            <div class="logo">
+                <a href="#">
+                    <div><img
+                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/logo-light-retina.png">
+                    </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="#">
+                    <div>Home</div>
+                </a>
+                <a href="#">
+                    <div id="services">Services</div>
+                </a>
+                <a href="#">
+                    <div>Work</div>
+                </a>
+                <a href="#">
+                    <div>Project Details</div>
+                </a>
+                <a href="#">
+                    <div>Contact</div>
+                </a>
+            </div>
+            <div class="contact">
+                <a href="#">
+                    <div class="phone_content">
+                        <div><img src="phone-call.png"></div>
+                        <div>555-123-4567</div>
+                    </div>
+                </a>
+                <div><a href="#"><button class="bar_button">Contact</button></a></div>
+                <button class="burger">
+                    <span class="span1"></span>
+                    <span class="span2"></span>
+                    <span id="span3"></span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="mobile_menu" id="mobileMenu">
+        <a id="cross"><img src="cross-button.png"></a>
+        <a href="#">Home</a>
+        <a href="#" id="services2">Services</a>
+        <a href="#">Work</a>
+        <a href="#">Project Details</a>
+        <a href="#">Contact</a>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.getElementById('mobileMenu');
+        const cross = document.getElementById('cross');
+
+        burger.addEventListener('click', () => {
+            menu.classList.add('active');
+        });
+
+        cross.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>

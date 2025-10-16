@@ -10,12 +10,12 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 1</title>
+    <title>flexbox1</title>
 
     <style>
         img {
             overflow: hidden;
-            width: 100%;
+            transform: scale(1.05);
             border-radius: 15px;
         }
 
@@ -92,17 +92,6 @@
             margin-bottom: 120px;
         }
 
-        .in_box {
-            width: 32%;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 20%;
-            border-radius: 15px;
-            gap: 20px;
-        }
-
         .box23 {
             margin-top: 50px;
             width: 74%;
@@ -116,11 +105,10 @@
         .bdname {
             margin: 0 auto;
             width: 80%;
-            line-height: 1em;
-            letter-spacing: 1px;
-            font-size: 1.5vw;
+            font-size: 1.65vw;
             font-family: 'Archivo', sans-serif;
-            font-weight: bold;
+            font-weight: bolder;
+            margin-top: 10px;
         }
 
         .in_img img {
@@ -129,7 +117,7 @@
         }
 
         .in_box:hover img {
-            transform: scale(1.1);
+            transform: scale(1.15);
         }
 
         .in_img div {
@@ -216,6 +204,16 @@
         #trd_txt {
             animation-delay: 0.4s;
         }
+
+        .in_box a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            gap: 20px;
+        }
     </style>
 
 </head>
@@ -235,60 +233,72 @@
     <div class="box23">
         <div class="box2">
             <div class="in_box">
-                <div class="in_img">
-                    <div><img
-                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-017-copyright.jpg">
+                <a href="#">
+                    <div class="in_img">
+                        <div><img
+                                src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-017-copyright.jpg">
+                        </div>
                     </div>
-                </div>
-                <div class="bdname">Residential projects</div>
-                <div class="trd_txt">We build sustainable and modern homes for comfortable living.</div>
+                    <div class="bdname">Residential projects</div>
+                    <div class="trd_txt">We build sustainable and modern homes for comfortable living.</div>
+                </a>
             </div>
             <div class="in_box">
-                <div class="in_img">
-                    <div><img
-                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-018-copyright.jpg">
+                <a href="#">
+                    <div class="in_img">
+                        <div><img
+                                src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-018-copyright.jpg">
+                        </div>
                     </div>
-                </div>
-                <div class="bdname">Commercial spaces</div>
-                <div class="trd_txt">We create efficient, inspiring workspaces for businesses of all sizes.</div>
+                    <div class="bdname">Commercial spaces</div>
+                    <div class="trd_txt">We create efficient, inspiring workspaces for businesses of all sizes.</div>
+                </a>
             </div>
             <div class="in_box">
-                <div class="in_img">
-                    <div><img
-                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-019-copyright.jpg">
+                <a href="#">
+                    <div class="in_img">
+                        <div><img
+                                src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-019-copyright.jpg">
+                        </div>
                     </div>
-                </div>
-                <div class="bdname">Infrastructure works</div>
-                <div class="trd_txt">We develop strong, reliable infranstrucutre for growing communities.</div>
+                    <div class="bdname">Infrastructure works</div>
+                    <div class="trd_txt">We develop strong, reliable infranstrucutre for growing communities.</div>
+                </a>
             </div>
         </div>
         <div class="box3">
             <div class="in_box">
-                <div class="in_img">
-                    <div><img
-                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-020-copyright.jpg">
+                <a href="#">
+                    <div class="in_img">
+                        <div><img
+                                src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-020-copyright.jpg">
+                        </div>
                     </div>
-                </div>
-                <div class="bdname">Building renovations</div>
-                <div class="trd_txt">We upgrade and transform spaces with modern design solutions.</div>
+                    <div class="bdname">Building renovations</div>
+                    <div class="trd_txt">We upgrade and transform spaces with modern design solutions.</div>
+                </a>
             </div>
             <div class="in_box">
-                <div class="in_img">
-                    <div><img
-                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-021-copyright.jpg">
+                <a href="#">
+                    <div class="in_img">
+                        <div><img
+                                src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-021-copyright.jpg">
+                        </div>
                     </div>
-                </div>
-                <div class="bdname">Project management</div>
-                <div class="trd_txt">We handle projects from planning to delivery with expert care.</div>
+                    <div class="bdname">Project management</div>
+                    <div class="trd_txt">We handle projects from planning to delivery with expert care.</div>
+                </a>
             </div>
             <div class="in_box">
-                <div class="in_img">
-                    <div><img
-                            src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-022-copyright.jpg">
+                <a href="#">
+                    <div class="in_img">
+                        <div><img
+                                src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-022-copyright.jpg">
+                        </div>
                     </div>
-                </div>
-                <div class="bdname">Sustainable solutions</div>
-                <div class="trd_txt">We focus on green building practices to protect the environment.</div>
+                    <div class="bdname">Sustainable solutions</div>
+                    <div class="trd_txt">We focus on green building practices to protect the environment.</div>
+                </a>
             </div>
         </div>
     </div>
